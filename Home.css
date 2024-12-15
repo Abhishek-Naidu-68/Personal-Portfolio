@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    background: #161513;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px  30px;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+}
+.nav-menu li{
+    transition: 0.3s;
+}
+.nav-menu li:hover{
+    font-size: 21px;
+    font-weight: 200;
+    cursor: pointer;
+}
+.nav-menu li a{
+    color: white;
+    text-decoration: none;
+}
+.nav-contact{
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1);
+    cursor: pointer;
+    transition: 0.5s;
+}
+#a-nav-contact{
+    text-decoration: none;
+}
+.nav-contact{
+    text-decoration: none;
+    color: white;
+}
+.nav-contact:hover{
+    transform: scale(1.05);
+}
+.me img{
+    margin-top: 30px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.me img:hover{
+    box-shadow: 0 0 25px rgb(218, 218, 67);
+}
+.me{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+.me h1{
+    text-align: center;
+    width: 70%;
+    font-size: 90px;
+    font-weight: 600;
+}
+.me h1 span{
+    background: linear-gradient(270deg,#DF8908 10%,#B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.me p{
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.me-action{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.me-connect{
+    padding: 25px 45px;
+    border-radius: 50px;
+    background: linear-gradient(264deg,#DF8908 -5.09%,#B415FF 106.28%);
+    cursor: pointer;
+}
+.me-resume{
+    padding: 25px 75px;
+    border-radius: 50px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.me a{
+    color: white;
+    text-decoration: none;
+}
+.me-connect:hover{
+    border: 2px solid white;
+}
+.me-resume:hover{
+    border: 2px solid purple;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 30px;
+}
+.about-title h1{    
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+.about-title img{
+    margin-top: 0px;
+}
+.about-sections{
+    width: 100%;
+    display: flex;
+}
+.about-left{
+    width: 25%;
+}
+.about-left img{
+    border-radius: 50%;
+}
+.about-right{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.about-para{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.about-skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap:30px;
+    font-size: 24px;
+    font-weight: 400;
+    width: 100%;
+}
+.about-skills p{
+    border-right: 4px solid white;
+    padding-right: 10px;
+}
+.about-achievements{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+.about-achievement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: 0.5s;
+}
+.about-achievement h1{
+    font-size: 60px;
+    font-weight: 700;
+    background: linear-gradient(270deg,#DF8908 50.41%,#B415FF 90.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about-achievement p{
+    font-size: 22px;
+    font-weight: 500;
+}
+.about-achievement:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.acadamics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    margin: 80px 30px;
+}
+.acadamics-title h1{    
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+.acadamics-title img{
+    margin-top: 0px;
+}
+.acadamics-body{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    width: 100%;
+    margin-top: 10px;
+}
+.education{
+    margin-top: 0px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+}
+.education-left{
+    width: 30%;
+}
+.education-right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 68%;
+}
+.education-right pre{
+    font-size: 20px;
+}
+.education-right h3{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.certifications{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.certifications h3{
+    text-align: center;
+    font-size: 30px;
+}
+.certificates{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+}
+.certificate{
+    width: 25%;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.2s;
+}
+.certificate:hover{
+    box-shadow: 0px 0px 15px green;
+}
+.certificate button{
+    height: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.certificate button:hover{
+    color: rgb(22, 195, 68);
+    background-color: black;
+}
+.projects-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.projects-section h3{
+    text-align: center;
+    font-size: 30px;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.project{
+    border: 2px solid white;
+    margin: 30px;
+    display: flex;
+    gap: 80px;
+    padding: 20px;
+    width: 95%;
+}
+.project-left{
+    width: 20%;
+}
+.project-right{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 30px;
+}
+.project-right pre{
+    font-size: 15px;
+}
+.project-right pre a{
+    color: yellow;
+}
+.personal-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    margin: 80px 30px;
+}
+.personal-info-title h1{    
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+.personal-info-title img{
+    margin-top: 0px;
+}
+.personal-details{
+    padding: 20px;
+    margin-top: 30px;
+    display: flex;
+    border: 2px solid white;
+}
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 30px;
+}
+.contact-me-title h1{    
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+.contact-me-title img{
+    margin-top: 0px;
+}
+.contact-me-body{
+    display: flex;
+    gap: 40px;
+    box-shadow: 0 0 10px green;
+}
+.contact-me-left{
+    border: 2px solid white;
+    font-size: 18px;
+}
+.contact-form input{
+    height: 30px;
+}
+.contact-form{
+    
+    padding: 20px;
+}
+.contact-form h3{
+    text-align: center;
+}
+#btn{
+    text-align: center;
+}
+#btn button{
+    height: 30px;
+    width: 100px;
+    transition: 0.3s;
+}
+#btn button:hover{
+    background-color: black;
+    color: green;
+}
+.contact-form #purpose{
+    height:80px;
+    width: 100%;
+}
+.contact-me-right{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    padding: 10px;
+    gap: 20px;
+}
+.right-title h3{
+    text-align: center;
+}
+.right-body pre button{
+    height: 30px;
+}
+.thank-you{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 80px 30px;
+}
+.thank-you h1{  
+    color: white;  
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+.thank-you img{
+    margin-top: 0px;
+}
+.thank-you-body a{
+    text-decoration: None;
+    color: white;
+}
+.thank-you-body button{
+    height: 40px;
+    width: 200px;
+}
